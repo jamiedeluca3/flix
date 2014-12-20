@@ -12,6 +12,9 @@ end
 #   gem 'pg'
 # end
 
+# Used for debugging
+gem 'pry'
+
 # Use Bcrypt for Password Digests / Management
 gem 'bcrypt-ruby', '~> 3.1.2'
 

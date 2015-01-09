@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
 	resource :session
 	get "signup" => "users#new"
 	get "sign-in" => "sessions#new"
@@ -7,5 +8,6 @@ Rails.application.routes.draw do
   root "movies#index"
   resources :movies do
     resources :reviews
+	  resources :favorites
   end
 end
